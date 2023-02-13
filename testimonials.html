@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonial</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css">
+        <style>
+        :root {
+                --orange:#FFC894;
+                --testimonial-primary-card:1.125rem;
+                --testimonial-secondary-card:1.8rem;
+                --testimonial-tertiary-card:2.8rem;
+               
+                
+            }
+            .secondary-heading {
+                font-size: var(--secondary-heading);
+                line-height: var( --big-line-heigh);
+            }
+            .masonry {
+                font-size: var(--body-font-tertiary);
+                line-height: var(--line-height-secondary);
+                color: var(--color-light);
+            }
+            .item {
+                margin-bottom:var( --margin-3);
+                break-inside:avoid;
+                box-shadow: 0.125rem 0.125rem 0.25rem 0 var(--primary-medium);
+                border-radius: var(--border-radius-1);
+            }
+            .testimonial-grid {
+                columns:1;
+                grid-row:3;
+                column-gap:var(--grid-gutter);
+            }
+            .img-width {
+                width: var( --width-full);
+                /* height: var(  --testimonial-card-img); */
+                object-fit:fill;
+                display: block;
+            }
+            .img-width.frame{
+                width: var( --width-full);
+                /* height: var(--testimonial-card-img-small); */
+                object-fit:fill;
+                display: block;
+            }
+            .text-white {
+                padding: var(--padding-4);
+            }
+            .testimonial-primary-card {
+                padding: var(--testimonial-primary-card);
+            }
+            .testimonial-secondary-card {
+                padding: var(--testimonial-secondary-card);
+            }
+            .testimonial-tertiary-card {
+                padding: var(--testimonial-tertiary-card);
+            }
+            .item:nth-child(5n+1) {
+                background-color: var(--orange);
+            }
+            .item:nth-child(5n+2) {
+                background-color: var(--secondary-medium);
+            }
+            .item:nth-child(5n+3) {
+                background-color: var(--tertiary);
+                /* padding: var(--padding-4);  */
+            }
+            .item:nth-child(5n+4) {
+                background-color:var(--secondary-light);
+                 color: var(--color-primary-text); 
+            }
+            .item:nth-child(5n+5) {
+                background-color: var(--primary);
+                /* padding: var(--padding-4); */
+            }
+            .masonry .item-padding {
+                /* padding: var(--padding-10) var(--padding-4); */
+            }
+            @media screen and (min-width:576px) {
+                 
+                .testimonial-grid {
+                    columns:2;
+                     grid-row:3;
+                    column-gap:var(--grid-gutter);
+                }
+            }
+            @media screen and (min-width:768px) {
+                 
+                 .testimonial-grid {
+                     columns:3;
+                     grid-row:3;
+                     column-gap:var(--grid-gutter);
+                 }
+             }
+            @media screen and (min-width:992px) {
+                 
+                 .testimonial-grid {
+                     columns:4;
+                     grid-row:3;
+                     column-gap:var(--grid-gutter);
+                 }
+             }
+             @media screen and (min-width:1200px) {
+                 
+                 .testimonial-grid {
+                     columns:6;
+                     grid-row:3;
+                     column-gap:var(--grid-gutter);
+                 }
+             }
+        </style>
+    </head>
+    <body>
+        <section class="section-spacing">
+            <div class="container">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                <h2 class="text-center secondary-heading">
+                    What our customers are saying
+                </h2>
+                <div class="testimonial-grid">
+          
+                    <div class="masonry">
+                        <div class="item testimonial-primary-card">
+                            
+                        </div>
+                        <div class="item ">
+                            <img class="img-width" src="./geexu-css-framework/assets/images/testimonials-1.png" alt="testimonials-1"/>
+                        </div>
+                        <div class="item testimonial-primary-card ">
+                                “In sync in one place”
+                        </div>
+                        <div class="item testimonial-primary-card ">
+                            “Much easier
+                            to track progress”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            “In sync in one place”
+                        </div>
+                        <div class="item  testimonial-primary-card ">
+                            “More effective
+                            with much less effort.”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            “More effective
+                            with much less effort.”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            “Never seen productivity
+                            at this level.”
+                        </div>
+                        <div class="item  testimonial-primary-card">
+                            “In sync in one place”
+                        </div>
+                        <div class="item testimonial-primary-card ">
+                            “Never seen productivity
+                            at this level.”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            “More clarity
+                            on progress.”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            <img class="img-width frame" src="./geexu-css-framework/assets/images/Frame.png" alt="Frame">
+                        </div>
+                        <div class="item testimonial-primary-card ">
+                            “Stopped looking in multiple places for our work.”
+                        </div>
+                        <div class="item  testimonial-primary-card">
+                            “Never seen productivity
+                            at this level.”
+                        </div>
+                        <div class="item testimonial-primary-card">
+                            
+                        </div>
+                        <div class="item ">
+                            <div>
+                                <img class="img-width" src="./geexu-css-framework/assets/images/testimonials-2.png" alt="testimonials-2">
+                            </div>
+                        </div>  
+                     </div>
+                </div>
+    
+            </div>
+
+        </section>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Newsletter</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css">
+
+        <style>
+            :root {
+                --input-width:12rem;
+            }
+            .input_width {
+                width: var(--width-full);
+                padding: var(--padding-5);
+                border-radius: var(--border-radius-2);
+                font-size: var( --body-font-tertiary);
+                padding-right:var(--input-width) ;
+            }
+            .newsletter-input {
+                position: relative;
+            }
+            .newsletter-btn {
+                font: var(--body-font-tertiary);
+                position: absolute;
+                top: 14%;
+                right: 1%;
+                border-radius: var(--border-radius-2);
+                padding:var(--padding-4) var(--padding-9);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section class="section-spacing">
+            <div class="container">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="secondary-heading text-center">
+                            To get worldclass insights & opinions, subscribe to our Newsletter
+                        </h2>
+                        <div class="newsletter-input">
+                            <input class="input_width" type="email" placeholder="enter email id">
+                            <a href="#">
+                                <button class="btn_primary newsletter-btn" type="button">
+                                    Subscribe
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

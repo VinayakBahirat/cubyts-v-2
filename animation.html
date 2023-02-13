@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <!-- <link rel="stylesheet" href="./geexu-css-framework/geexu.css"/> -->
+
+    <style>
+
+        .continer {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .primary {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+        .inner {
+            border-radius: 50%;
+        }
+        .one {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: one 3s ease 0.2s 1.0 alternate both;
+        }
+        .two {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%,-50%);
+            animation: two 3s ease 0.2s 1.0 alternate both;
+        }
+        .three {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: three 3.3s ease 0.4s 1.2 alternate both;
+        }
+        .four {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%,-50%);
+            animation: four 3.3s ease 0.4s 1.2 alternate both;
+        }
+        .five {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: five 4s ease 0.6s 1.0 alternate both;
+        }
+        .six {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%,-50%);
+            animation: six 4s ease 0.6s 1.0 alternate both;
+        }
+        .seven {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: seven 4.5s ease 0.8s 1.0 alternate both;
+        }
+        .eight {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%,-50%);
+            animation: eight 4.5s ease 0.8s 1.0 alternate both;
+        }
+        .nine {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: nine 4.8s ease 0.8s 1.0 alternate both;
+        }
+        .img-width {
+            width:3rem;
+        }
+        @keyframes one {  
+            100% {
+                left: 38%; top: 28%;
+            }
+        }
+        @keyframes two {  
+            100% {
+                right: 32%; top: 58%;
+            }
+        }
+        @keyframes three {  
+            100% {
+                left: 40%; top: 65%;
+            }
+        }
+        @keyframes four {  
+            100% {
+                right: 40%; top: 32%;
+            }
+        }
+        @keyframes five {  
+            100% {
+                left: 23%; top: 45%;
+            }
+        }
+        @keyframes six {  
+            100% {
+                right: 24%; top: 42%;
+            }
+        }
+        @keyframes seven {  
+            100% {
+                left: 18%; top: 70%;
+            }
+        }
+        @keyframes eight {  
+            100% {
+                right: 8%; top: 60%;
+            }
+        }
+        @keyframes nine {  
+            100% {
+                left: 9%; top: 50%;
+            }
+        }
+        @media screen and (min-width:576px) {
+            .img-width {
+            width:5rem;
+        }
+        }
+        @media screen and (min-width:768px) {
+            .img-width {
+            width:6rem;
+        }
+        }
+        @media screen and (min-width:992px) {
+            .img-width {
+            width:7rem;
+        }
+        }
+        @media screen and (min-width:1200px) {
+            .img-width {
+            width:8rem;
+        }
+        }
+    </style>
+</head>
+<body>
+        <!-- <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-center">
+                    Integrate with your favorite tools
+                </h2>
+            </div>
+        </div> -->
+        <a href="./index.html">
+            Index-file Components
+        </a>
+        <div class="container primary">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/cubyts-logo.svg" alt="" >
+            </div>
+        </div>
+        <div class="container one">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_1.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container two">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/jira.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container three">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_6.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container four">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_7.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container five">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/file.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container six">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/figma-icon.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container seven">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_5.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container eight">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_10.svg" alt="" >
+
+            </div>
+        </div>
+        <div class="container nine">
+            <div class="inner">
+                <img class="img-width" src="./geexu-css-framework/assets/images/Group-icon_4.svg" alt="" >
+
+            </div>
+        </div>
+</body>
+</html>

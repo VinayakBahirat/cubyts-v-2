@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Nav Bar</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css"/>
+        
+        <style>
+            :root {
+                --nav-col-1:25%;
+                --nav-col-2:50%;
+                --nav-col-3:75%;
+                --nav-col-4:100%;
+                --nav-padding:2.813rem;
+                --nav-title-color:#B8B7B7;
+                --nav-title-letter-spacing:0.063rem;
+                --nav-small-text-line-height:0.875rem;
+                --nav-border-color:#D9D9D9;
+                --nav_bg_color:#F8F8F8;
+                --nav-item_gap:1rem;
+            }
+            .nav {
+                display: flex;
+                flex-direction: column;
+                font-size: var(--primary-dropdown);
+                box-shadow:0.9rem 0.9rem 3rem var(--primary-medium);
+            }
+            .nav-col-1 {
+                min-width: var(--nav-col-1);
+                width: 100%;
+            }
+            .nav-col-2 {
+                min-width: var(--nav-col-2);
+                width: 100%;
+            }
+            .nav-col-3 {
+                min-width: var(--nav-col-3);
+                width: 100%;
+            }
+            .nav-col-4 {
+                min-width: var(--nav-col-4);
+                width: 100%;
+            }
+            
+            .nav-padding {
+                padding:0 var(--nav-padding);
+            }
+            .nav-title {
+                font-weight: var(--semibold);
+                color:var(--nav-title-color) ;
+                line-height: var(--line-height-primary);
+                letter-spacing:var(--nav-title-letter-spacing) ;
+                margin-top: 0 ;
+            }
+            .list-unstyled {
+                list-style: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            .nav-item {
+                display: flex;
+                margin-bottom: var(--margin-4   );
+                gap: var(--nav-item_gap);
+                padding: var(--padding-3)  var(--padding-2)  ;
+            }
+            .nav-icon {
+               color: var(--color-highlight-text);
+            }
+            .badge-flex {
+                display: flex;
+                align-items: center;
+                gap: var(--nav-gap);
+            }
+            .badge {
+                width: var(--badge-width);
+                background-color: var( --badge-bg);
+                color: var(--badge-color);
+                padding: var( --padding-1);
+                font-size:var(--small-font);
+                text-align: center;
+            } 
+            .sub-heading {
+                margin: 0;
+            }
+            .nav-info {
+                margin: var( --margin-2) 0;
+                font-size: var(--secondary-dropdown);
+                line-height:var(--nav-small-text-line-height) ;
+            }
+ 
+            .icon-color {
+                font-weight: var(--semibold);
+                color: var(--color-highlight-text);
+                margin-top: var(--margin-1);
+                display: block;
+            }
+            .nav-col-2 ul.product li{
+                flex: 1 1 42%;
+            }
+            .nav-col-3 ul.product li{
+                flex: 1 1 33%;
+            }
+            .nav-col-4 ul.product li{
+                flex: 1 1 25%;
+            }
+
+            .nav-item:hover {
+                background-color: var( --nav_bg_color);
+            }
+             @media screen and (min-width:576px) {
+                .nav {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 0;                
+                }
+                .product {
+                    display: flex;  
+                    align-items: start;
+                    flex-wrap: wrap;
+                    gap:0 var(--padding-7);
+                }
+                 .nav-col-1 {
+                    max-width: var(--nav-col-2);
+                    width: 100%;
+                }
+                .nav-col-2 {
+                    min-width: var(--nav-col-4);
+                    width: 100%;
+                }
+                .nav-col-3 {
+                    min-width: var(--nav-col-4);
+                    width: 100%;
+                }
+                .nav-col-4 {
+                    min-width: var(--nav-col-4);
+                    width: 100%;
+                } 
+            } 
+   
+             @media screen and (min-width:1200px) {
+                .nav {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;                
+                }
+            
+                .nav-col-1 {
+                    max-width: var(--nav-col-1);
+                    min-width: var(--nav-col-1);
+                    width: 100%;
+                    padding: 0 var(--padding-6);
+                }
+                .nav-col-2 {
+                    max-width: var(--nav-col-2);
+                    min-width: var(--nav-col-2);
+                    width: 100%;
+                    padding: 0 var(--padding-6);
+                }
+                .nav-col-3 {
+                    min-width: var(--nav-col-3);
+                    width: 100%;
+                    padding: 0 var(--padding-6);
+                }
+                .nav-col-4 {
+                    min-width: var(--nav-col-4);
+                    width: 100%;
+                    padding: 0 var(--padding-6);
+                }   
+                .border-right {
+                        border-right: var(--border-1) solid var(--nav-border-color);
+                        height: var(--border-height);
+                        overflow: hidden;
+                } 
+                .nav-title {
+                    margin-top: var(--margin-5);
+                }            
+            } 
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                    <div class="nav nav-padding ">
+                        <div class="nav-col-2 border-right">
+                            <h4 class="nav-title ">
+                                PRODUCT
+                            </h4>
+                            <div class="nav_bg_color">
+                                <ul class="list-unstyled product" type="none">
+                                    <li>
+                                        <a href="#">
+                                            <div class="">
+                                                <div class="nav-item">
+                                                    <div class="nav-icon">
+                                                        <span class="icon-color icon-Dashboard"></span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="badge-flex">
+                                                            <h4 class="sub-heading">
+                                                                Dashboard
+                                                            </h4>
+                                                            <span class="badge">
+                                                                New
+                                                            </span>    
+                                                        </div>
+                                                        <p class="nav-info">
+                                                            Sub text of 2 lines 
+                                                            comes here and can be this long
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <span class="icon-color icon-Reporting"></span>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Automated Reports
+                                                        </h4>   
+                                                    </div>
+                                                     <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <span class="icon-color icon-Alignment"></span>
+                                                  
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Business Alignment
+                                                        </h4>   
+                                                    </div>
+                                                     <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <span class="icon-color icon-People-Operations"></span>
+                                                      
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            People Operations
+                                                        </h4>   
+                                                    </div>
+                                                     <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                     
+                                                      <span class="icon-color icon-Project-Management"></span>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Project Management
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <span class="icon-color icon-Design-Culture"></span>
+                                                    
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Design Culture
+                                                        </h4>   
+                                                    </div>
+                                                     <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" nav-col-1 border-right">
+                            <div class="">
+                                <h4 class="nav-title ">
+                                    CONTENT
+                                 </h4>
+                                <ul class="list-unstyled content"  type="none">
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">  
+                                                    <span class="icon-color icon-Knowledge-repository"></span>                                                    
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Knowledge Repository
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <span class="icon-color icon-standardisation"></span>
+
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Standardization
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                    
+                                                      <span class="icon-color icon-Design-maturity"></span>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Design Maturity
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class=" nav-col-1 ">  
+                            <h4 class="nav-title ">
+                                INTEGRATIONS
+                             </h4>
+                            <ul class="list-unstyled integrations" type="none">
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                <span class="icon-color icon-Collaboration"></span>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Collaboration
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                 
+                                                  <span class="icon-color icon-Integrations"></span>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Integrations
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+               
+                    </div>
+            </div>
+        </section>
+    </body>
+</html>

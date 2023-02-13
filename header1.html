@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header-1</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css"/>
+        <style>
+            :root {
+                --logo-width:9.5rem;
+                --main-nav-font:1.25rem;
+                --nav-list-gap:2rem;
+                --login-sign-up-btn-gap:1rem;
+            }
+            .logo {
+                width: var(--logo-width);
+                margin-top: var(--margin-1);
+            }
+            .main-nav-font {
+                font-size: var(--main-nav-font);
+            }
+            .nav-list {
+                display: flex;
+                align-items: center;
+                gap: var(--nav-list-gap);
+            }
+            .nav-list a {
+                text-decoration: none;
+                color: var(--color-primary-text);
+            }
+            .login-sign-up-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:var(--nav-list-gap)
+            }
+            .login-sign-up-btn a {
+                text-decoration: none;
+                color: var(--login-sign-up-btn-gap);
+            }
+            .nav-display {
+                display:none;
+            }
+            @media screen and (min-width:768px) {
+                 .nav-display {
+                    display:block;
+                } 
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="main-nav-font">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                <div class="row">
+                        <div class="col-3">
+                            <a href="#">        
+                                <img class="logo" src="./geexu-css-framework/assets/images/logo-1.png" alt="logo"/>
+                            </a>
+                        </div>
+                        <div class="col-6 nav-display">
+                            <ul type="none" class="nav-list">
+                                <li>
+                                    <a href="#">
+                                        Product
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Solutions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Security
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Resource
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Pricing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 login-sign-up-btn">
+                                    <div>
+                                        <a href="#">
+                                            Log In
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button class=" btn_primary" type="button">
+                                            Sign Up
+                                        </button>
+                                    </div>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>

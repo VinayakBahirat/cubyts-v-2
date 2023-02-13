@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banner video</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css"/>
+        <style>
+            .banner-video {
+                width: var( --width-full);
+            }
+            .margin-auto {
+                margin: 0 var(--margin);
+            }
+            .main-heading {
+                font-size: var(--secondary-heading);
+                font-weight: 700;
+                margin-bottom: var(--margin-6);
+            }
+            
+            @media screen and (min-width:992px) {
+                    .main-heading {
+                    font-size: var(--primary-heading);
+                    font-weight: 700;
+                    line-height: var( --main-heading);
+                    margin-bottom: var(--margin-6);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="section-spacing">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                <div class="row">
+                    <div class="col-12 margin-auto">
+                        <h1 class="main-heading text-center">
+                            Deliver Exceptional <br/>
+                            Design-led Products
+                        </h1>
+                        <div>
+                            <video class="banner-video" width="100%" controls autoplay muted loop poster="./geexu-css-framework/assets/images/Video placeholder.png" >
+                                <source  src="https://pni364.n3cdn1.secureserver.net/wp-content/uploads/2022/07/Cubyts-Web-Home-Video-14July2022-v2.mp4" type="video/mp4">
+                                <source src="https://pni364.n3cdn1.secureserver.net/wp-content/uploads/2022/07/Cubyts-Web-Home-Video-14July2022-v2.mp4" type="video/ogg">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

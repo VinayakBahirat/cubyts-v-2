@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banner</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css">
+        <style>
+            .main-heading {
+                font-size: var(--secondary-heading);
+                font-weight: 700;
+                margin-bottom: var(--margin-6);
+            }
+    
+            .margin-auto {
+                margin: 0 var(--margin);
+            }
+            .banner-btn {
+                margin:var(--margin-4) 0 ;
+            }
+            .banner-paragraph {
+                    line-height: var( --line-height-quaternary);
+                }
+            @media screen and (min-width:992px) {
+                    .main-heading {
+                    font-size: var(--primary-heading);
+                    font-weight: 700;
+                    line-height: var( --main-heading);
+                    margin-bottom: var(--margin-6);
+                }
+
+                    .banner-paragraph {
+                    /* width: var(--width-60);
+                    margin: 0 var(--margin); */
+                    font-size: var( --body-font-tertiary);
+                    line-height: var(--line-height-tertiary);
+                }
+                .banner-btn {
+                    margin:var(--margin-7) 0 ;
+                 }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class=" section-spacing">
+                <a href="./index.html">
+                    Index-file Components
+                </a>
+                    <div class="row">
+                        <div class="col-12 margin-auto">
+                            <div class="text-center">
+                                <h1 class="main-heading">
+                                    Deliver Exceptional  <br/>
+                                    Design-led Products
+                                </h1>
+                                <p class="banner-paragraph">
+                                    Cubyts helps you streamline design execution, make better product decisions & always align with business objectives so you focus on building exceptional products. 
+                                </p>
+        
+                                <button type="button" class="btn_primary banner-btn">
+                                <span class="text-semibold">
+                                    Get Started
+                                </span>  - Its Free
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+    </body>
+</html>

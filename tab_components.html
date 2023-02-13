@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tab components</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css">
+        <style>
+            :root{
+                --tab_components_icon:1.875rem;
+                --tab_componets_icon_gap:2.5rem;
+                --tab_font_color:#CCBCFD;
+                --tab_section_light_bg_:#DDD1FF;
+
+            }
+            .icon_flex {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap:var(--tab_componets_icon_gap) ;
+                overflow-x: auto;
+                overflow-y:hidden;
+                /* flex: 0 1 150px; */
+                padding: var(--padding-2) var(--padding-8) var(--padding-8) var(--padding-8);
+            }
+            .icon-font{
+                font-size: var(--tab_components_icon);
+                font-weight: var(--semibold);
+            }
+            .tab_section_bg {
+                background-color: var(  --primary); 
+                padding:0 var(--padding-2) ; 
+                overflow: hidden;
+            }
+            .tab_text_white {
+                color: var(  --color-light);
+            }
+            .tab_text_white .btn_tertiary {
+                color: var(   --tab_font_color);
+                padding:var(--padding-2);
+            }
+            .tab_text_white .btn_tertiary_active {
+                color: var(--color-light);
+                padding-bottom:var(--padding-2);
+                border: 0px;
+                border-bottom: 1px solid ;
+            }
+            .tab_section_light_bg {
+                background-color: var(--tab_section_light_bg_);
+                padding: var(--padding-10) var(--padding-3);
+            }
+             .tab_btn_title{
+                margin-bottom: var(--margin-2);
+            } 
+            .tab_img_section {
+                display: flex;
+               align-items: center;
+               justify-content: center;
+                width:100%;
+                margin: 0 var(--margin);  
+            }
+            .tab_paragraph {
+                margin-top: var(--margin-9);
+            }
+            .tab_active_icom {
+                position: absolute;
+                bottom:-100%;
+                left:30%;
+                height: 2.2rem;
+                width: 2.2rem;
+                background-color:var(--tab_section_light_bg_);
+                rotate: 45deg;
+                z-index: 2;
+            }
+            .tab_section_bg .btn_tertiary:hover {
+                color:var(  --primary) ;
+            }
+            /* .tab_section_img_width {
+                width: var(--width-full);
+            } */
+            @media screen and (min-width:768px){
+                 /* .tab_img_section {
+                    width: 75%;
+                }  */
+         
+                .icon_flex {
+                    justify-content: center;
+                }
+            }
+            @media screen and (min-width:992px){
+                .tab_img_section {
+                    width: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class=" section-spacing ">
+            <a href="./index.html">
+                Index-file Components
+            </a>
+            <div class="container text-center tab_section_bg">
+           
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab_text_white">
+                            <h2 class="secondary-heading">
+                                Everything you need for complete Design Lifecycle Management
+                            </h2>
+                            <div class="icon_flex ">
+                                <a class="btn_tertiary">
+                                    <i class="icon-Alignment icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Alignment
+                                    </p>
+                                </a>
+                                <a class="btn_tertiary">
+                                    <i class="icon-vision icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Visibility
+                                    </p>
+                                </a>
+                                <a href="#" class="btn_tertiary">
+                                    <i class="icon-Execution icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Execution
+                                    </p>
+                                </a>
+                                <a href="#" class="btn_tertiary">
+                                    <i class="icon-Team icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Teams
+                                    </p>
+                                </a>
+                                <a href="#" class="btn_tertiary btn_tertiary_active ">
+                                    <i class="icon-Knowledge-repository icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Knowledge
+                                    </p>
+                                    <div class="tab_active_icom">
+
+                                    </div>
+                                </a>
+                                <a href="#" class="btn_tertiary">
+                                    <i class="icon-Reporting icon-font">
+
+                                    </i>
+                                    <p class="tab_btn_title ">
+                                        Reporting
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_section_light_bg">
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <div class="">
+                            <img class="tab_img_section" src="./geexu-css-framework/assets/images/tab_section_1.png" alt="tab_1"/>  
+                        </div>
+                        <p class="paragraph tab_paragraph ">
+                            Cubyts allows organizations to store, retain, share and have full access to past projects and re-use the available content, making the processes faster and easier.
+                        </p>
+                        <a  href="#">
+                            <button class="btn_secondary ">
+                                Explore Feature >
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

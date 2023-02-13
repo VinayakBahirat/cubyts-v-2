@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>nav-items</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <style>
+            :root {
+                /* --nav-height: 30.313rem; */
+                --small-font:0.875rem;
+                --icon-width:1.5rem;
+                --border-height:100%;
+            }
+            .product {
+                display: flex;
+                align-items: start;
+                flex-wrap: wrap;
+                gap:0 var(--padding-7); 
+              
+            }
+            /* .product li {
+                width: 45%;
+            } */
+            .nav-title {
+                color:var(--color-secondary-text-light);
+                margin-bottom: var(--padding-8);
+                padding-left: var(--padding-9); 
+            }
+            .list-unstyled {
+                list-style: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            .nav-height {
+                box-shadow:0.9rem 0.9rem 3rem var(--primary-medium);
+                padding:var(--padding-2) var(--padding-6);
+            }
+            .nav-height a {
+                text-decoration: none;
+                color: var( --color-primary-text);
+            }
+            .badge-flex {
+                display: flex;
+                align-items: center;
+                gap: var(--nav-gap);
+            }
+            .badge {
+                width: var(--badge-width);
+                background-color: var( --badge-bg);
+                color: var(--badge-color);
+                padding: var( --padding-1);
+                font-size:var(--small-font);
+                text-align: center;
+            } 
+            .nav-info {
+                margin: var( --margin-2) 0;
+                font-size: var(--secondary-dropdown);
+                letter-spacing: var( --footer-heading-spacing);
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+            .integrations {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav-icon {
+                max-width:var(--icon-width) ;
+            }
+            .nav-item {
+                display: flex;
+                margin-bottom: var(--margin-7);
+                gap: 1.25rem;
+            }
+            /* .nav-item .nav-icon {
+                width: var(--width-20);
+            }
+            .nav-item .nav-content {
+                width: var(--width-80);
+            } */
+            .sub-heading {
+                margin: 0;
+            }
+            @media screen and (min-width:992px) {
+                    /* .nav-height {
+                        height: var(--nav-height);
+                } */
+                    .border-right {
+                        border-right: var(--border-1) solid var(--primary-medium);
+                        height: var(--border-height);
+                        overflow: hidden;
+                }
+                    .nav-title {
+                        color:var(--color-secondary-text-light)
+                }
+                    .nav-sub {
+                        margin-top: var(--margin-4);
+                } 
+                     /* .nav-height {
+                    padding:var(--padding-6) var(--padding-10);
+                } */
+                    .content {
+                     padding: 0 var(--padding-3);
+                }
+                    .integrations {
+                        padding: 0 var(--padding-3);
+                }
+                    .nav-title {
+                        margin-bottom: var(--padding-8);
+                        padding-left: var(--padding-9);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section class="nav-height">
+                <div class="row">
+                    <div class=" col-12-sm col-6-md ">
+                        <div class="border-right">
+                            <h3 class="nav-title">
+                                PRODUCT
+                             </h3>
+                            <div>
+                                <ul class="list-unstyled product" type="none">
+                                    <li>
+                                        <a href="#">
+                                            <div class="">
+                                                <div class="nav-item">
+                                                    <div class="nav-icon">
+                                                        <img src="./geexu-css-framework/assets/images/dashboard-icon.png" alt="dashboard-icon"/>
+                                                    </div>
+                                                    <div class="nav-content">
+                                                        <div class="badge-flex">
+                                                            <h4 class="sub-heading">
+                                                                Dashboard
+                                                            </h4>
+                                                            <span class="badge">
+                                                                New
+                                                            </span>    
+                                                        </div>
+                                                        <p class="nav-info">
+                                                            Sub text of 2 lines 
+                                                        </p>
+                                                        <p class="nav-info">
+                                                            comes here and can be this long
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                               
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <img src="./geexu-css-framework/assets/images/automated-reports-icon.png" alt="Automated-Reports-icon"/>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Automated Reports
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                    </p>
+                                                    <p class="nav-info">
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <img src="./geexu-css-framework/assets/images/business-alignment-icon.png" alt="business-alignment-icon"/>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Business Alignment
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                    </p>
+                                                    <p class="nav-info">
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <img src="./geexu-css-framework/assets/images/people-operations-icon.png" alt="people-operations"/>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            People Operations
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                    </p>
+                                                    <p class="nav-info">
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <img src="./geexu-css-framework/assets/images/project-management-icon.png" alt="project-management"/>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Project Management
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                    </p>
+                                                    <p class="nav-info">
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                    <li>
+                                        <a href="#">
+                                            <div class="nav-item">
+                                                <div class="nav-icon">
+                                                    <img src="./geexu-css-framework/assets/images/design-culture-icon.png" alt="design-culture"/>
+                                                </div>
+                                                <div class="nav-content">
+                                                    <div class="badge-flex">
+                                                        <h4 class="sub-heading">
+                                                            Design Culture
+                                                        </h4>   
+                                                    </div>
+                                                    <p class="nav-info">
+                                                        Sub text of 2 lines 
+                                                    </p>
+                                                    <p class="nav-info">
+                                                        comes here and can be this long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-6-sm col-3-md ">
+                        <div class="border-right">
+                            <h3 class="nav-title ">
+                                CONTENT
+                             </h3>
+                            <ul class="list-unstyled content"  type="none">
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                <img src="./geexu-css-framework/assets/images/knowledge-repository-icon.png" alt="knowledge-repository-icon"/>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Knowledge Repository
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                </p>
+                                                <p class="nav-info">
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                <img src="./geexu-css-framework/assets/images/standardization-icon.png" alt="standardization-icon.png"/>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Standardization
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                </p>
+                                                <p class="nav-info">
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                <img src="./geexu-css-framework/assets/images/design-maturity-icon.png" alt="design-maturity-icon"/>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Design Maturity
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                </p>
+                                                <p class="nav-info">
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6-sm col-3-md">
+                        <h3 class="nav-title ">
+                            INTEGRATIONS
+                         </h3>
+                        <ul class="list-unstyled integrations" type="none">
+                            <li>
+                                <a href="#">
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                            <img src="./geexu-css-framework/assets/images/collaboration-icon.png" alt="collaboration-icon"/>
+                                        </div>
+                                        <div class="nav-content">
+                                            <div class="badge-flex">
+                                                <h4 class="sub-heading">
+                                                    Collaboration
+                                                </h4>   
+                                            </div>
+                                            <p class="nav-info">
+                                                Sub text of 2 lines 
+                                            </p>
+                                            <p class="nav-info">
+                                                comes here and can be this long
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                            <img src="./geexu-css-framework/assets/images/integrations-icon.png" alt="integrations-icon"/>
+                                        </div>
+                                        <div class="nav-content">
+                                            <div class="badge-flex">
+                                                <h4 class="sub-heading">
+                                                    Integrations
+                                                </h4>   
+                                            </div>
+                                            <p class="nav-info">
+                                                Sub text of 2 lines 
+                                            </p>
+                                            <p class="nav-info">
+                                                comes here and can be this long
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
