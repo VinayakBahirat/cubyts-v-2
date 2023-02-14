@@ -63,7 +63,8 @@
             .tab_paragraph {
                 margin-top: var(--margin-9);
             }
-            .tab_active_icom {
+            .tab_text_white .btn_tertiary_active::after {
+                content: "";
                 position: absolute;
                 bottom:-100%;
                 left:30%;
@@ -91,6 +92,7 @@
             @media screen and (min-width:992px){
                 .tab_img_section {
                     width: auto;
+                    height:37rem ;
                 }
             }
         </style>
@@ -117,7 +119,7 @@
                                         Alignment
                                     </p>
                                 </a>
-                                <a class="btn_tertiary">
+                                <a class="btn_tertiary  btn_tertiary_active ">
                                     <i class="icon-vision icon-font">
 
                                     </i>
@@ -132,25 +134,25 @@
                                     <p class="tab_btn_title ">
                                         Execution
                                     </p>
+                                
                                 </a>
-                                <a href="#" class="btn_tertiary">
+                                <a href="#" class="btn_tertiary ">
                                     <i class="icon-Team icon-font">
 
                                     </i>
                                     <p class="tab_btn_title ">
                                         Teams
                                     </p>
+                              
                                 </a>
-                                <a href="#" class="btn_tertiary btn_tertiary_active ">
+                                <a href="#" class="btn_tertiary ">
                                     <i class="icon-Knowledge-repository icon-font">
 
                                     </i>
                                     <p class="tab_btn_title ">
                                         Knowledge
                                     </p>
-                                    <div class="tab_active_icom">
-
-                                    </div>
+                              
                                 </a>
                                 <a href="#" class="btn_tertiary">
                                     <i class="icon-Reporting icon-font">

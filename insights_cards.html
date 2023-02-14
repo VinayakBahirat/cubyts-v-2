@@ -15,7 +15,7 @@
             .insights_card_paragraph {
                 font-size: var(--body-font-tertiary);
                 line-height: var(--line-height-quaternary);
-                margin: 0 0 var(--margin-6);
+                margin:var(--margin-3)  0 var(--margin-6);
             }
             .insights__date {
                 font-size: var(--body-font-quaternary);
@@ -34,7 +34,11 @@
                 gap: var(--grid-no-gutter);
                 justify-content: center;
             }
-           
+            .insights_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
         </style>
     </head>
     <body>
@@ -44,47 +48,48 @@
         <section class="container ">
             <div class="section-spacing">
                 <div class="row">
-                    <div class="col-4">
-                        <div>
+                    <div class="col-4 insights_card">
                             <div>
-                                <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                <div>
+                                    <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                </div>
+                                <span class="insights_card_highlight_text insights_card_margin">
+                                    Blog
+                                </span>
+                               <p class="insights_card_paragraph">
+                                    5 Excellent Design System Examples To change your persspective... 
+                                </p>
                             </div>
-                            <span class="insights_card_highlight_text insights_card_margin">
-                                Blog
-                            </span>
-                           <p class="insights_card_paragraph">
-                                5 Excellent Design System Examples To change your persspective... 
-                            </p> 
                             <span class="insights__date">23 AUGUST | 5 min read</span>
-                        </div>
+                    </div>  
+                    <div class="col-4 insights_card">
+
+                            <div>
+                                <div>
+                                    <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                </div>
+                                <span class="insights_card_highlight_text insights_card_margin">
+                                    Blog
+                                </span>
+                                <p class="insights_card_paragraph">
+                                    5 Excellent Design System Examples To change your persspective... 
+                                </p>
+                            </div>
+                            <span class="insights__date">23 AUGUST | 5 min read</span>
                     </div>
-                    <div class="col-4">
-                        <div>
+                    <div class="col-4 insights_card">
                             <div>
-                                <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                <div>
+                                    <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                </div>
+                                <span class="insights_card_highlight_text insights_card_margin">
+                                    Blog
+                                </span>
+                                <p class="insights_card_paragraph">
+                                    5 Excellent Design System Examples To change your persspective... 
+                                </p>
                             </div>
-                            <span class="insights_card_highlight_text insights_card_margin">
-                                Blog
-                            </span>
-                            <p class="insights_card_paragraph">
-                                5 Excellent Design System Examples To change your persspective... 
-                            </p>
                             <span class="insights__date">23 AUGUST | 5 min read</span>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div>
-                            <div>
-                                <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
-                            </div>
-                            <span class="insights_card_highlight_text insights_card_margin">
-                                Blog
-                            </span>
-                            <p class="insights_card_paragraph">
-                                5 Excellent Design System Examples To change your persspective... 
-                            </p>
-                            <span class="insights__date">23 AUGUST | 5 min read</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -94,21 +99,21 @@
         <section class="container ">
             <div class="section-spacing">
                 <div class="row no-gutter">
-                    <div class="col-4 insights_card_body_margin">
-                        <div>
+                    <div class="col-4 insights_card insights_card_body_margin">
                             <div>
-                                <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                <div>
+                                    <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
+                                </div>
+                                <span class="insights_card_highlight_text insights_card_margin">
+                                    Blog
+                                </span>
+                               <p class="insights_card_paragraph">
+                                    5 Excellent Design System Examples To change your persspective... 
+                                </p>
                             </div>
-                            <span class="insights_card_highlight_text insights_card_margin">
-                                Blog
-                            </span>
-                           <p class="insights_card_paragraph">
-                                5 Excellent Design System Examples To change your persspective... 
-                            </p> 
                             <span class="insights__date">23 AUGUST | 5 min read</span>
-                        </div>
                     </div>
-                    <div class="col-4 insights_card_body_margin">
+                    <div class="col-4 insights_card insights_card_body_margin">
                         <div>
                             <div>
                                 <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
@@ -119,10 +124,10 @@
                             <p class="insights_card_paragraph">
                                 5 Excellent Design System Examples To change your persspective... 
                             </p>
-                            <span class="insights__date">23 AUGUST | 5 min read</span>
                         </div>
+                        <span class="insights__date">23 AUGUST | 5 min read</span>
                     </div>
-                    <div class="col-4 insights_card_body_margin">
+                    <div class="col-4 insights_card insights_card_body_margin">
                         <div>
                             <div>
                                 <img class="insights_card_img " src="./geexu-css-framework/assets/images/insights-1.png" alt="insights-1"/>
@@ -133,8 +138,8 @@
                             <p class="insights_card_paragraph">
                                 5 Excellent Design System Examples To change your persspective... 
                             </p>
-                            <span class="insights__date">23 AUGUST | 5 min read</span>
                         </div>
+                            <span class="insights__date">23 AUGUST | 5 min read</span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> img_text</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css"/>
+        <style>
+            :root {
+                --product_dashboards_img_rounded:#D9D9D9;
+                --product_dashboards_img_text_paragraph:#505050;
+            }
+            .product_dashboards_img_text_link {
+                color: var(--color-highlight-text);
+                letter-spacing: 0.1rem;
+                font-weight: 700;
+                padding-left: 0.6rem;
+            }
+            .product_dashboards_img_text_heading {
+                padding-left: 0.4rem;
+                margin: var(--margin-3) 0;
+            }
+            .product_dashboards_img_text_paragraph {
+                position: relative;
+                color: var( --product_dashboards_img_text_paragraph);
+                font-size: var(--body-font-secondary);
+                line-height:var(--line-height-secondary) ;
+                padding-left: 1rem;
+                margin: var(--margin-3) 0;
+            }
+            .product_dashboards_img_text_paragraph::after {
+                content: "";
+                position: absolute;
+                left: -1rem;
+                top:0.5rem;
+                background-color:var(--product_dashboards_img_rounded) ;
+                display: block;
+                height: 0.8rem;
+                width: 0.8rem;
+                border-radius: 50%;
+            }
+            .product_dashboards_img {
+                width: var(  --width-full);
+            
+            }        
+            .product_dashboards_text_padding {
+                padding-left: var(--padding-5);
+            }
+            .product_dashboards_img_text {
+                margin: var(--margin-4) 0;
+            }
+            /* this class use to change your structure*/
+            .product_dashboards_text_reverse {
+                flex-direction: row-reverse;
+            }
+        </style>
+    </head>
+    <body>
+      
+       <section class="section-spacing">
+            <div class="container ">
+                <div class="row product_dashboards_text_reverse">
+                    <div class="col- col-6-sm product_dashboards_img_text">
+                        <img class="product_dashboards_img" src="././geexu-css-framework/assets/images/product_dashboards_img.png" alt="product_dashboards_img"/>
+                    </div>
+                    <div class="col- col-6-sm product_dashboards_img_text">
+                        <div class="">
+                            <a href="#" class="product_dashboards_img_text_link"> DesignOps View</a>
+                            <h4 class="tertiary-heading product_dashboards_img_text_heading">
+                                A Dashboard every design manager needs
+                            </h4>
+                            <div class="product_dashboards_text_padding">
+                                <p class="product_dashboards_img_text_paragraph">
+                                    Get a timeline view of project insights.
+                                </p>
+                                <p  class="product_dashboards_img_text_paragraph">
+                                    Insights into team utilization, competencies and skill gaps
+                                </p>
+                                <p  class="product_dashboards_img_text_paragraph">
+                                    Daily/weekly activity and collaboration updates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </body>
+</html>

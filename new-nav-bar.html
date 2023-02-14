@@ -9,10 +9,11 @@
         
         <style>
             :root {
-                --nav-col-1:25%;
-                --nav-col-2:50%;
-                --nav-col-3:75%;
-                --nav-col-4:100%;
+                --nav_col_1:100%;
+                --nav_col_2:calc(100% / 2);
+                --nav_col_3:calc(100% / 3);
+                --nav_col_4:calc(100% / 4);
+                --nav_col_5:calc(100% / 5);
                 --nav-padding:2.813rem;
                 --nav-title-color:#B8B7B7;
                 --nav-title-letter-spacing:0.063rem;
@@ -21,31 +22,34 @@
                 --nav_bg_color:#F8F8F8;
                 --nav-item_gap:1rem;
             }
-            .nav {
+            .nav_flex {
                 display: flex;
                 flex-direction: column;
                 font-size: var(--primary-dropdown);
                 box-shadow:0.9rem 0.9rem 3rem var(--primary-medium);
             }
-            .nav-col-1 {
-                min-width: var(--nav-col-1);
+            .nav_col_1 {
+                min-width: var(--nav_col_1);
                 width: 100%;
             }
-            .nav-col-2 {
-                min-width: var(--nav-col-2);
+            .nav_col_2 {
+                min-width: var(--nav_col_2);
                 width: 100%;
             }
-            .nav-col-3 {
-                min-width: var(--nav-col-3);
+            .nav_col_3 {
+                min-width: var(--nav_col_3);
                 width: 100%;
             }
-            .nav-col-4 {
-                min-width: var(--nav-col-4);
+            .nav_col_4 {
+                min-width: var(--nav_col_4);
                 width: 100%;
             }
-            
+            .nav_col_5 {
+                min-width: var(--nav_col_5);
+                width: 100%;
+            }
             .nav-padding {
-                padding:0 var(--nav-padding);
+                padding:0 var(--padding-5);
             }
             .nav-title {
                 font-weight: var(--semibold);
@@ -61,7 +65,7 @@
             }
             .nav-item {
                 display: flex;
-                margin-bottom: var(--margin-4   );
+                margin-bottom: var(--margin-4);
                 gap: var(--nav-item_gap);
                 padding: var(--padding-3)  var(--padding-2)  ;
             }
@@ -89,28 +93,33 @@
                 font-size: var(--secondary-dropdown);
                 line-height:var(--nav-small-text-line-height) ;
             }
- 
             .icon-color {
                 font-weight: var(--semibold);
                 color: var(--color-highlight-text);
                 margin-top: var(--margin-1);
                 display: block;
             }
-            .nav-col-2 ul.product li{
+            .nav_col {
+                    flex: 1 1 0%;
+                }
+            /* .nav_col_2 ul.product li{
                 flex: 1 1 42%;
             }
-            .nav-col-3 ul.product li{
-                flex: 1 1 33%;
+            .nav_col_3 ul.product li{
+                flex: 1 1 32%;
             }
-            .nav-col-4 ul.product li{
-                flex: 1 1 25%;
+            .nav_col_4 ul.product li{
+                flex: 1 1 23%;
             }
-
+            .nav_col_5 ul.product li{
+                flex: 1 1 18%;
+            } */
             .nav-item:hover {
                 background-color: var( --nav_bg_color);
             }
-             @media screen and (min-width:576px) {
-                .nav {
+        
+              @media screen and (min-width:576px) {
+                .nav_flex {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -122,62 +131,82 @@
                     flex-wrap: wrap;
                     gap:0 var(--padding-7);
                 }
-                 .nav-col-1 {
-                    max-width: var(--nav-col-2);
+                 .nav_col_1 {
+                    max-width: var(--nav_col_2);
                     width: 100%;
                 }
-                .nav-col-2 {
-                    min-width: var(--nav-col-4);
+                .nav_col_2 {
+                    min-width: var(--nav_col_5);
                     width: 100%;
                 }
-                .nav-col-3 {
-                    min-width: var(--nav-col-4);
+                .nav_col_3 {
+                    min-width: var(--nav_col_5);
                     width: 100%;
                 }
-                .nav-col-4 {
-                    min-width: var(--nav-col-4);
+                .nav_col_4 {
+                    min-width: var(--nav_col_5);
                     width: 100%;
                 } 
-            } 
-   
-             @media screen and (min-width:1200px) {
-                .nav {
+                .nav_col_5 {
+                    min-width: var(--nav_col_5);
+                    width: 100%;
+                } 
+            }  
+              @media screen and (min-width:992px) {
+                .nav_flex .nav_border:not(:nth-last-child(1)){
+                        border-right: var(--border-1) solid var(--nav-border-color);
+                        height: 100%;
+                        overflow: hidden;
+                }
+                .nav_flex {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;                
                 }
             
-                .nav-col-1 {
-                    max-width: var(--nav-col-1);
-                    min-width: var(--nav-col-1);
+                .nav_col_1 {
+                    max-width: var(--nav_col_1);
+                     min-width: var(--nav_col_1); 
                     width: 100%;
                     padding: 0 var(--padding-6);
                 }
-                .nav-col-2 {
-                    max-width: var(--nav-col-2);
-                    min-width: var(--nav-col-2);
+                .nav_col_2 {
+                    max-width: var(--nav_col_2);
+                    min-width: var(--nav_col_2); 
                     width: 100%;
                     padding: 0 var(--padding-6);
                 }
-                .nav-col-3 {
-                    min-width: var(--nav-col-3);
+                .nav_col_3 {
+                    max-width: var(--nav_col_3);
+                     min-width: var(--nav_col_3); 
                     width: 100%;
                     padding: 0 var(--padding-6);
                 }
-                .nav-col-4 {
-                    min-width: var(--nav-col-4);
+                .nav_col_4 {
+                    max-width: var(--nav_col_4);
+                    min-width: var(--nav_col_4); 
                     width: 100%;
                     padding: 0 var(--padding-6);
-                }   
-                .border-right {
-                        border-right: var(--border-1) solid var(--nav-border-color);
-                        height: var(--border-height);
-                        overflow: hidden;
                 } 
+                .nav_col_5 {
+                    max-width: var(--nav_col_5);
+                    min-width: var(--nav_col_5); 
+                    width: 100%;
+                    padding: 0 var(--padding-6);
+                }  
+    
                 .nav-title {
                     margin-top: var(--margin-5);
-                }            
-            } 
+                }  
+                .nav-padding {
+                    padding:0 var(--nav-padding);
+                 }  
+                .product li {
+                    flex-grow: 1;
+                    flex-basis: 50%;
+                    max-width: calc(50% - var(--padding-7));
+                }        
+            }  
         </style>
     </head>
     <body>
@@ -186,12 +215,13 @@
                 <a href="./index.html">
                     Index-file Components
                 </a>
-                    <div class="nav nav-padding ">
-                        <div class="nav-col-2 border-right">
+                    <div class="nav_flex nav-padding ">
+                          <!--change nav-col class on her recruitment-->
+                        <div class="nav_col nav_border">
                             <h4 class="nav-title ">
                                 PRODUCT
                             </h4>
-                            <div class="nav_bg_color">
+                            <div class="nav_bg_color ">
                                 <ul class="list-unstyled product" type="none">
                                     <li>
                                         <a href="#">
@@ -325,7 +355,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class=" nav-col-1 border-right">
+                          <!--change nav-col class on her recruitment-->
+                        <div class=" nav_col_4 nav_border">
                             <div class="">
                                 <h4 class="nav-title ">
                                     CONTENT
@@ -396,7 +427,8 @@
                                 </ul>
                             </div>
                         </div>
-                         <div class=" nav-col-1 ">  
+                          <!--change nav-col class on her recruitment-->
+                         <div class=" nav_col_4  nav_border">  
                             <h4 class="nav-title ">
                                 INTEGRATIONS
                              </h4>
@@ -444,9 +476,57 @@
                                 </li>
                             </ul>
                         </div>
-               
+                          <!--change nav-col class on her recruitment-->
+                         <!-- <div class=" nav_col_4 nav_border">  
+                            <h4 class="nav-title ">
+                                INTEGRATIONS
+                             </h4>
+                            <ul class="list-unstyled integrations " type="none">
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                <span class="icon-color icon-Collaboration"></span>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Collaboration
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav-item">
+                                            <div class="nav-icon">
+                                                 
+                                                  <span class="icon-color icon-Integrations"></span>
+                                            </div>
+                                            <div class="nav-content">
+                                                <div class="badge-flex">
+                                                    <h4 class="sub-heading">
+                                                        Integrations
+                                                    </h4>   
+                                                </div>
+                                                <p class="nav-info">
+                                                    Sub text of 2 lines 
+                                                    comes here and can be this long
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
             </div>
         </section>
     </body>
-</html>
+    </html>

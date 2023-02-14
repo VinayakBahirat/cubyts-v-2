@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Page Banner</title>
+        <link rel="stylesheet" href="./geexu-css-framework/geexu.css" />
+        <style>
+            :root {
+                --product_page_sub_heading_color:#cccccc;
+            }
+            .product_page_sub_heading {
+                color: var(--product_page_sub_heading_color);
+                margin-bottom: 0;
+            }
+            .product_page_heading_margin {
+                margin-top:0 ;
+            }
+            .product_page_img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                position: relative;
+            }
+            .product_page_bg {
+                position: relative;
+                padding-bottom: var(--padding-11);
+            }
+            .product_page_bg::before {
+                content: "";
+                position: absolute;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: var( --primary-light);
+                height: 40%;
+                display: block;
+
+            }
+            @media screen and (min-width:768px){
+                .product_page_img {
+                    width: auto;
+                    height:35rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class=" container ">
+            <div class="section-spacing text-center">
+                <div class="row">
+                    <div class="col product_page_bg">
+                        <h4 class="product_page_sub_heading">DASHBOARD</h4>
+                        <h1 class="secondary-heading product_page_heading_margin">
+                            Data thats empowers you to 
+                            take quick decisions.
+                        </h1>
+                        <div class="">
+                            <img class="product_page_img" src="./geexu-css-framework/assets/images/product_page_img.png" alt="product_page_banner" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
